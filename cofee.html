@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cofee</title>
+    <link rel="stylesheet" href="cofee.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Cofee <span>.</span></a></div>
+            <ul class="link">
+                <ion-icon class="cancel" name="close-outline"></ion-icon>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">platform</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            <ion-icon class="menu" name="menu-outline"></ion-icon>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>start your day with fresh cofee.</h1>
+            <p>cofee is a popular and behoved beverage enjoyed by poeple around the world.
+                aweken your senses with a steaming cup of liquid  motivation.
+            </p>
+            <button>join now</button>
+        </div>
+    </div>
+
+    <script>
+        const nav = document.querySelector("nav");
+        const menu = document.querySelector(".menu");
+        const cancel = document.querySelector(".cancel");
+
+        menu.addEventListener("click", () =>{
+            nav.classList.toggle("show-mobile-menu");
+
+        })
+
+        cancel.addEventListener("click", () =>{
+            menu.click();
+            
+        })
+    </script>
+
+</body>
+</html>
